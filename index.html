@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>day 4 - layout and semantics</title>
+
+	<!-- meta data = brains -->
+
+	<meta charset="utf-8">
+	<meta name="description" content="Free Web tutorials">
+  	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  	<meta name="author" content="John Doe">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  	<!-- css links -->
+  	<link rel="stylesheet" type="text/css" href="css/styles.css">
+  	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Permanent+Marker" rel="stylesheet">
+  	<link rel="stylesheet" href="icons/css/font-awesome.min.css">
+
+  	<!-- making IE able to read html5 semantic tags -->
+
+  	<!--[if lt IE 9]>
+	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<div id="container">
+
+<div class="totop">
+	<a href="#">To top</a>
+</div>
+
+<!-- header area -->
+
+<header>
+	<h1 id="logo"><a href="#">Acme website</a></h1>
+	<h2>Welcome to Acmes Awesome website</h2>
+</header>
+
+<!-- Site navigation -->
+
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Services</a>
+		<ul>
+			<li><a href="#">Web design</a></li>
+			<li><a href="#">Print design</a></li>
+			<li><a href="#">Game design</a></li>
+		</ul>
+		</li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+</nav>
+
+<!-- content section -->
+
+<section>
+	<h2>No man, I don't eat pork</h2>
+	<article class="left">
+		<img src="img/vudu.png" class="vudu">
+			<p>Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?</p>
+			<i class="fa fa-facebook-square" aria-hidden="true"></i>
+		<h3>Hold on to your butts</h3>
+			<p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston or anybody else is in there, you the first motherfucker to get shot. You understand?</p>
+		<h3>Are you ready for the truth?</h3>
+			<p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p>
+	</article>
+	<article class="right">
+	<img src="img/sith.jpg">
+			<p>Spicy jalapeno bacon ipsum dolor amet dolor ribeye strip steak meatball. Dolor magna alcatra bacon chuck sint do strip steak cow et ball tip. </p>
+
+	</article>
+	<div class="clearfix"></div>	
+</section>
+<section class="contact-form">
+<a name="contact"></a>
+<h4>Contact</h4>
+<p>Picanha ball tip tri-tip quis minim. Pancetta tri-tip ullamco, meatloaf ham hock lorem brisket hamburger.</p>
+
+<form method="POST" action="contact.php">
+<fieldset>
+<legend>Tell me about yourself</legend>
+	<input type="text" name="Full-Name" placeholder="Fill in your name" required>
+	<input type="email" name="email">
+	<textarea name="message">
+		
+	</textarea>
+	<input type="submit" name="Go daddy">
+	</fieldset>		
+</form>
+
+	
+</section>
+
+<!-- footer section -->
+
+<footer>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Service</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	<p><small>Copyright &copy; AMCE 2017</small></p>
+</footer>
+
+</div>
+
+</body>
+</html>
